@@ -42,14 +42,21 @@
                 <span>*</span>
                 <span>政治面貌：</span>
             </span>
-            <select name="type">
-                <option value="">请选择</option>
-                <option value="">群众</option>
-                <option value="">中国共产党</option>
-                <option value="">中国共青团</option>
-                <option value="">九三学社</option>
-                <option value="">国民党</option>
-            </select>
+            <div class="select-menu">
+                <div class="select">
+                  <span>请选择政治面貌</span>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="options-list">
+                  <div class="option">群众</div>
+                  <div class="option">中国共产党</div>
+                  <div class="option">中国共青团</div>
+                  <div class="option">九三学社</div>
+                  <div class="option">国民党</div>
+                  <div class="option">中国农工民主党</div>
+                  <div class="option">中国民主同盟</div>
+                </div>
+            </div>
         </div>
         <!-- 省直单位容器 -->
         <div>
@@ -85,7 +92,37 @@
                 <span>*</span>
                 <span>居住地址：</span>
             </span>
-            <div class="lineblock">
+            <div class="select-menu" style="width: 200px;">
+                <div class="select">
+                  <span>请选择</span>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="options-list">
+                  <div class="option">江西省</div>
+                  <div class="option">湖南省</div>
+                  <div class="option">湖北省</div>
+                  <div class="option">山东省</div>
+                  <div class="option">广东省</div>
+                  <div class="option">浙江省</div>
+                  <div class="option">安徽省</div>
+                </div>
+            </div>
+            <div class="select-menu" style="width: 200px;">
+                <div class="select">
+                  <span>请选择</span>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="options-list">
+                  <div class="option">南昌市</div>
+                  <div class="option">长沙市</div>
+                  <div class="option">武汉市</div>
+                  <div class="option">青岛市</div>
+                  <div class="option">深圳市</div>
+                  <div class="option">杭州市</div>
+                  <div class="option">马鞍山市</div>
+                </div>
+            </div>
+            <!-- <div class="lineblock">
                 <select name="type">
                     <option value="">请选择</option>
                     <option value="">江西省</option>
@@ -102,7 +139,7 @@
                     <option value="">广州市</option>
                     <option value="">宁波市</option>
                 </select>
-            </div>
+            </div> -->
         </div>
         <!-- 民族容器 -->
         <div>
@@ -293,4 +330,5 @@
         </div>
     </div>
 </body>
+<script src="js/script.js"></script>
 </html>
