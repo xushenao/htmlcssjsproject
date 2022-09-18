@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信息表单</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- 最外层容器 -->
+    <div class="max_container">
+        <!-- 真实姓名容器 -->
+        <div>
+            <span>
+                <span>*</span>
+                <span>真实姓名：</span>
+            </span>
+            <input type="text" placeholder="请输入真实姓名，只能填写中文！"
+             class="input400">
+        </div>
+        <!-- 证件类型容器 -->
+        <div>
+            <span>
+                <span>*</span>
+                <span>证件类型：</span>
+            </span>
+            <input type="text" value="身份证" class="input400">
+        </div>
+        <!-- 证件号容器 -->
+        <div>
+            <span>
+                <span>*</span>
+                <span>证件号：</span>
+            </span>
+            <input type="text" placeholder="请输入证件号" class="input400">  
+        </div>
+        <!-- 证件面貌容器 -->
+        <div>
+            <span>
+                <span>*</span>
+                <span>政治面貌：</span>
+            </span>
+            <select name="type">
+                <option value="">请选择</option>
+                <option value="">群众</option>
+                <option value="">中国共产党</option>
+                <option value="">中国共青团</option>
+                <option value="">九三学社</option>
+                <option value="">国民党</option>
+            </select>
+        </div>
+        <!-- 省直单位容器 -->
+        <div>
+            <span>
+                <span>*</span>
+                <span>省直单位：</span>
+            </span>
+            <div class="lineblock">
+                <input type="radio" name="sure" value="no" id="no" checked>
+                <label for="no">否</label>
+
+                <input type="radio" name="sure" value="yes" id="yes">
+                <label for="yes">是</label>
+            </div>
+        </div>
+        <!-- 性别容器 -->
+        <div>
+            <span>
+                <span>*</span>
+                <span>性别：</span>
+            </span>
+            <div class="lineblock">
+                <input type="radio" name="sex" value="boy" id="boy" checked>
+                <label for="boy">男</label>
+
+                <input type="radio" name="sex" value="girl" id="girl">
+                <label for="girl">女</label>
+            </div>
+        </div>
+        <!-- 居住地址容器 -->
+        <div>
+            <span>
+                <span>*</span>
+                <span>居住地址：</span>
+            </span>
+            <div class="lineblock">
+                <select name="type">
+                    <option value="">请选择</option>
+                    <option value="">江西省</option>
+                    <option value="">湖南省</option>
+                    <option value="">湖北省</option>
+                    <option value="">广东省</option>
+                    <option value="">浙江省</option>
+                </select>
+                <select name="type">
+                    <option value="">请选择</option>
+                    <option value="">南昌市</option>
+                    <option value="">长沙市</option>
+                    <option value="">武汉市</option>
+                    <option value="">广州市</option>
+                    <option value="">宁波市</option>
+                </select>
+            </div>
+        </div>
+        <!-- 民族容器 -->
+        <div>
+            <span>
+                <span>*</span>
+                <span>民族：</span>
+            </span>
+            <select name="type">
+                <option value="">请选择</option>
+                    <option value="">汉族</option>
+                    <option value="">傣族</option>
+                    <option value="">畲族</option>
+                    <option value="">壮族</option>
+                    <option value="">维吾尔族</option>
+            </select>
+        </div>
+        <!-- 地址容器 -->
+        <div>
+            <span>
+                <span>*</span>
+                <span>地址：</span>
+            </span>
+            <input type="text" placeholder="请输入街道地址" class="input400">
+        </div>
+        
+        <div></div>
+        <!-- 擅长容器 -->
+        <div class="Areasofexpertise">
+            <span>
+                <span class="Areasofexpertise_span">*</span>
+                <span>擅长领域：</span>
+            </span>
+            <div class="lineblock Areasofexpertise_sub">
+                <ul>
+                    <li><input type="checkbox" value="文化志愿者" id="wh">
+                        <label for="wh">文化志愿者</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="教育志愿者" id="jy">
+                        <label for="jy">教育志愿者</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="文明传播志愿者" id="whcb">
+                        <label for="whcb">文明传播志愿者</label>
+                    </li>
+                    <li><input type="checkbox" value="助残志愿者" id="zc">
+                        <label for="zc">助残志愿者</label></li>
+                    <li>
+                        <input type="checkbox" value="医疗志愿者" id="yl">
+                        <label for="yl">医疗志愿者</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="应急志愿者" id="yj">
+                        <label for="yj">应急志愿者</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="交通志愿者" id="jt">
+                        <label for="jt">交通志愿者</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="消防志愿者" id="xf">
+                        <label for="xf">消防志愿者</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="科普志愿者" id="kp">
+                        <label for="kp">科普志愿者</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="治安志愿者" id="za">
+                        <label for="za">治安志愿者</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="综合志愿者" id="zh">
+                        <label for="zh">综合志愿者</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="体育志愿者" id="ty">
+                        <label for="ty">体育志愿者</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" value="美术志愿者" id="ms">
+                        <label for="ms">美术志愿者</label>
+                    </li>
+                    <li><input type="checkbox" value="IT志愿者" id="it">
+                        <label for="it">IT志愿者</label>
+                    </li>
+                    <li><input type="checkbox" value="红十字志愿者" id="hsz">
+                        <label for="hsz">红十字志愿者</label>
+                    </li>
+                    <li><input type="checkbox" value="法律援助志愿者" id="fy">
+                        <label for="fy">法律援助志愿者</label>
+                    </li>
+                    <li><input type="checkbox" value="文明旅游志愿者" id="ly">
+                        <label for="ly">文明旅游志愿者</label>
+                    </li>
+                    <li><input type="checkbox" value="摄影志愿者" id="sy">
+                        <label for="sy">摄影志愿者</label>
+                    </li>
+                    <li><input type="checkbox" value="财务志愿者" id="cw">
+                        <label for="cw">财务志愿者</label>
+                    </li>
+                    <li><input type="checkbox" value="翻译志愿者" id="fy">
+                        <label for="fy">翻译志愿者</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 服务领域容器 -->
+        <div class="server">
+            <span>
+                <span>*</span>
+                <span>服务领域：</span>
+            </span>
+            <div class="lineblock server_sub">
+                <ul>
+                    <li><input type="checkbox" value="贫户济困" id="ph">
+                        <label for="ph">贫户济困</label></li>
+                    <li><input type="checkbox" value="助老助残" id="zl">
+                        <label for="zl">助老助残</label></li>
+                    <li><input type="checkbox" value="大型赛会" id="sh">
+                        <label for="sh">大型赛会</label></li>
+                    <li><input type="checkbox" value="抢险救灾" id="qx">
+                        <label for="qx">抢险救灾</label></li>
+                    <li><input type="checkbox" value="社区服务" id="sq">
+                        <label for="sq">社区服务</label></li>
+                    <li><input type="checkbox" value="社会管理" id="sh">
+                        <label for="sh">社会管理</label></li>
+                    <li><input type="checkbox" value="教育培训" id="jypx">
+                        <label for="jypx">教育培训</label></li>
+                    <li><input type="checkbox" value="西部开发" id="xb">
+                        <label for="xb">西部开发</label></li>
+                    <li><input type="checkbox" value="省外服务" id="sw">
+                        <label for="sw">省外服务</label></li>
+                    <li><input type="checkbox" value="海外服务" id="hw">
+                        <label for="hw">海外服务</label></li>
+                    <li><input type="checkbox" value="环境保护" id="hj">
+                        <label for="zh">环境保护</label></li>
+                    <li><input type="checkbox" value="医疗健康" id="jk">
+                        <label for="jk">医疗健康</label></li>
+                    <li><input type="checkbox" value="法律咨询" id="fx">
+                        <label for="fx">法律咨询</label></li>
+                    <li><input type="checkbox" value="文明实践" id="wmsj">
+                        <label for="wmsj">文明实践</label></li>
+                    <li><input type="checkbox" value="综合/其他" id="qt">
+                        <label for="qt">综合/其他</label></li>
+                </ul>    
+            </div>
+        </div>
+        <!-- 从业容器 -->
+        <div>
+            <span>
+                <span>*</span>
+                <span>从业情况：</span>
+            </span>
+            <select name="type">
+                    <option value="">请选择</option>
+                    <option value="">工厂拧螺丝</option>
+                    <option value="">碧桂园五星上将</option>
+                    <option value="">女寝当保安</option>
+                    <option value="">送外卖</option>
+                    <option value="">抹灰</option>
+            </select>
+        </div>
+        <!-- 教育程度容器 -->
+        <div>
+            <span>
+                <span>*</span>
+                <span>教育程度：</span>
+            </span>
+            <select name="type">
+                <option value="">请选择</option>
+                    <option value="">带专</option>
+                    <option value="">一本</option>
+                    <option value="">二本</option>
+                    <option value="">三本</option>
+                    <option value="">研二</option>
+                    <option value="">野鸡大学</option>
+            </select>
+        </div>
+        <!-- 单位/学校容器 -->
+        <div>
+            <span>
+                <span>*</span>
+                <span>所在单位/学校：</span>
+            </span>
+            <input type="text" placeholder="请输入您所在的单位/学校的名称" class="input400"> 
+        </div>
+    </div>
+</body>
+</html>
